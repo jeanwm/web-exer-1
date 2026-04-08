@@ -28,7 +28,7 @@
         <p>No Brasil é um instrumento muito popular, muito ligado à música tradicional de praticamente todas as regiões do Brasil. Uma Festa de São João nunca está completa sem o som de uma gaita. Seja pelo nome de "gaita", "sanfona" ou "acordeon", ganhou muito destaque na música popular brasileira principalmente a partir da década de 1950, com destaque para o sanfoneiro Luiz Gonzaga, no nordeste, e Mary Terezinha, gaiteira muito presente na obra de Teixeirinha, famoso trovador do Rio Grande do Sul. A partir dos anos 1970 e 1980, perdeu espaço para outros instrumentos e gêneros musicais, mas ainda é muito difundido principalmente na música sertaneja, seja a "raiz" ou a "universitária", como também na música tradicional gaúcha, forró e axé, entre inúmeras outras.</p>
     </section>
 
-    <section class="d-flex flex-column m-5 p-3 background-white">
+    <section class="d-flex flex-column m-5 p-5 background-white card">
         <h3>Como diferenciar?</h3>
 
         <div class="d-flex flex-row">
@@ -51,7 +51,7 @@
             
                         <tr>        
                             <td>Mão direita</td>
-                            <td>Teclas*</td>
+                            <td>Teclas<span class="text-red">*</span></td>
                             <td>Botões</td>
                         </tr>
             
@@ -62,7 +62,7 @@
                         </tr>
             
                         <tr>    
-                            <td>Escala usada**</td>
+                            <td>Escala usada<span class="text-red">**</span></td>
                             <td>Cromática</td>
                             <td>Diatônica</td>
                         </tr>
@@ -72,12 +72,12 @@
     
             <aside class="w-50 ms-5">
                 <div>
-                    <h5>* Quase sempre!</h5>
+                    <h5><span class="text-red">*</span> Quase sempre!</h5>
                     <p>Há algumas sanfonas (como o <i>bayan</i> russo) que apesar de ter botões na mão direita, é classificado como um acordeon, pois usa a escala cromática. Mas são exceções; no geral, a sanfona usa teclas na mão direita.</p>
                 </div>
 
                 <div>
-                    <h5>** O que é uma escala cromática e uma escala diatônica (nas gaitas)?</h5>
+                    <h5><span class="text-red">**</span> O que é uma escala cromática e uma escala diatônica (nas gaitas)?</h5>
                     <p>A escala <b>cromática</b> é aquela que possui, além das 7 notas naturais (Dó, Ré, Mi, Fá, Sol, Lá e Si), também os sustenidos e bemóis (por exemplo, Dó# ou Ab - Dó sustenido e Lá bemol, respectivamente). O acordeon, portanto, é um instrumento cromático, porque possui as teclas brancas (naturais) e pretas (sustenidos e bemóis), totalizando 12 notas.</p>
                     <p>A escala <b>diatônica</b> possui somente as 7 notas naturais (Dó, Ré, Mi, Fá, Sol, Lá e Si), sem os sustenidos ou bemóis. No geral, a gaita-ponto (como a gaita de oito baixos, por exemplo) é um instrumento de escala diatônica.</p>
                 </div>
@@ -92,10 +92,10 @@
     </section>
 
     <hr>
-    <section class="d-flex flex-column align-items-center m-5 p-3 background-white">   
+    <section class="d-flex flex-column align-items-center m-5 p-5 background-white card">   
         <h3>Galeria</h3>
 
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-row mt-3">
             <figure class="me-3">
                 <img src="assets/img/todeschini-1.png" width="320px">
                 <figcaption>Acordeon Todeschini 120 baixos</figcaption>
@@ -137,8 +137,20 @@
 
     <!-- estilo CSS interno -->
     <style>
+        small {
+            opacity: calc(0.5);
+        }
+        
         .background-white {
             background-color: #FFF;
+        }
+
+        .text-red {
+            color: #FF0000;
+        }
+
+        .card {
+            border-radius: 16px;
         }
     </style>
 

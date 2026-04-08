@@ -18,7 +18,7 @@
         <h3>Descubra mais!</h3>
     </header>
 
-    <section class="d-flex flex-column m-5">
+    <section class="d-flex flex-column m-5 p-5" style="background-color: #FFF; border-radius: 16px;">
         <p>Faça nosso teste e descubra quão afinado sobre gaitas você está!</p>
 
         <hr>
@@ -26,50 +26,50 @@
             <form method="POST" action="">
                 <!-- incluir mais perguntas -->
 
-                <div class="d-flex flex-column">
-                    <div class="mb-3">
-                        <p>Seu nome:</p>
-                        <input type="text" id="nomeUsuario" name="nomeUsuario" required>
+                <div class="d-flex mb-3">
+                    <div class="mb-3 me-5">
+                        <p class="mb-0">Seu nome:</p>
+                        <input type="text" id="nomeUsuario" name="nomeUsuario" style="width: 320px" required>
                     </div>
 
                     <div class="mb-3">
-                        <p>Seu e-mail:</p>
-                        <input type="email" id="emailUsuario" name="emailUsuario" required>
+                        <p class="mb-0">Seu e-mail:</p>
+                        <input type="email" id="emailUsuario" name="emailUsuario" style="width: 320px" required>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <p>1. Qual é o nome do componente característico da gaita que abre e fecha para fazer a passagem do ar pelas palhetas?</p>
+                <div class="mb-5">
+                    <p><b>1.</b> Qual é o nome do componente característico da gaita que abre e fecha para fazer a passagem do ar pelas palhetas?</p>
 
                     <div>
                         <input type="radio" id="q1Botao" name="questao1">
                         <label for="q1Botao">Botão</label>
-                        <input type="radio" id="q1Fole" name="questao1">
+                        <input type="radio" id="q1Fole" name="questao1" style="margin-left: 16px">
                         <label for="q1Fole">Fole</label>
-                        <input type="radio" id="q1Aleta" name="questao1">
+                        <input type="radio" id="q1Aleta" name="questao1" style="margin-left: 16px">
                         <label for="q1Aleta">Aleta</label>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <p>2. Quais gêneros musicais abaixo são comumente associados à gaita?</p>
+                <div class="mb-5">
+                    <p><b>2.</b> Quais gêneros musicais abaixo são comumente associados à gaita?</p>
 
                     <div>
                         <input type="checkbox" id="q2check1" name="q2check1" value="tango">
                         <label for="q2check1">Tango</label>
-                        <input type="checkbox" id="q2check2" name="q2check2" value="rock">
+                        <input type="checkbox" id="q2check2" name="q2check2" value="rock" style="margin-left: 16px">
                         <label for="q2check2">Rock</label>
-                        <input type="checkbox" id="q2check3" name="q2check3" value="pagode">
+                        <input type="checkbox" id="q2check3" name="q2check3" value="pagode" style="margin-left: 16px">
                         <label for="q2check3">Pagode</label>
-                        <input type="checkbox" id="q2check4" name="q2check4" value="sertanejo">
+                        <input type="checkbox" id="q2check4" name="q2check4" value="sertanejo" style="margin-left: 16px">
                         <label for="q2check4">Sertanejo</label>
-                        <input type="checkbox" id="q2check5" name="q2check5" value="chamame">
+                        <input type="checkbox" id="q2check5" name="q2check5" value="chamame" style="margin-left: 16px">
                         <label for="q2check5">Chamamé</label>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <p>3. Qual dos itens a seguir comumente é uma gaita com botões na mão direita e de escala cromática?</p>
+                <div class="mb-5">
+                    <p><b>3.</b> Qual dos itens a seguir comumente é uma gaita com botões na mão direita e de escala cromática?</p>
 
                     <div>
                         <select name="q3select" id="q3select">
@@ -82,16 +82,16 @@
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <p>4. Há algo mais que você gostaria de saber sobre gaitas?</p>
+                <div class="mb-5">
+                    <p><b>4.</b> Há algo mais que você gostaria de saber sobre gaitas?</p>
     
                     <div>
                         <textarea id="qfinal" name="qfinal"></textarea>
                     </div>
                 </div>
 
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button>
+                <button type="reset" class="me-3" style="border-radius: 16px; border: none; background-color: #b1b1b1; color: #FFF; padding: 8px 12px;">Limpar</button>
+                <button type="submit" style="border-radius: 16px; border: none; background-color: #00b100; color: #FFF; padding: 8px 12px;">Enviar</button>
             </form>
         </div>
     </section>
