@@ -14,3 +14,11 @@ body {
 .footer-site {
     
 }
+
+.gaitas-background-white {
+    background-color: #FFF;
+}
+
+.gaitas-card {
+    border-radius: 16px;
+}
